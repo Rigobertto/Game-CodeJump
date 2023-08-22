@@ -85,7 +85,7 @@ void Player::Update()
         Translate(0, -300 * gameTime);
 
 
-    if (keyCtrl && window->KeyPress(VK_SPACE))
+    if (keyCtrl && window->KeyDown(VK_SPACE))
     {
         keyCtrl = true;
         // gravity = !gravity;
@@ -106,7 +106,7 @@ void Player::Update()
 
     if (jumpCtrl && window->KeyDown(VK_SPACE)) {
 
-        Translate(0, -18000 * gameTime);
+        Translate(0, (-window->Height() - 18000) * gameTime);
         anim = animJump;
         jumpCtrl = false;
 
