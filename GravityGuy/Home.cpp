@@ -13,6 +13,7 @@
 #include "GravityGuy.h"
 #include "Home.h"
 #include "Level1.h"
+#include "GameOver.h"
 
 // ------------------------------------------------------------------------------
 

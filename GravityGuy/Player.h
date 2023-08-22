@@ -34,7 +34,7 @@ public:
     Player();                           // construtor
     ~Player();                          // destrutor
 
-
+    void Reset();                       // volta ao estado inicial
     void OnCollision(Object* obj);     // resolução da colisão
     void Update();                      // atualização do objeto
     void Draw();                        // desenho do objeto

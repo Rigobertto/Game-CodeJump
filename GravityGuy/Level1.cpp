@@ -38,8 +38,8 @@ void Level1::Init()
     backg = new Background();
     scene->Add(backg, STATIC);
 
-    player = new Player();
-    scene->Add(player, MOVING);
+    //player = new Player();
+    //scene->Add(player, MOVING);
 
     Platform * plat = new Platform(683, 707);
     scene->Add(plat, STATIC);
@@ -52,7 +52,7 @@ void Level1::Init()
     //scene->Add(backg, STATIC);
 
     // adiciona jogador na cena
-    //scene->Add(GravityGuy::player, MOVING);
+    scene->Add(GravityGuy::player, MOVING);
 
     // ----------------------
     // plataformas
@@ -104,7 +104,7 @@ void Level1::Update()
         GravityGuy::NextLevel<Home>();
         //GravityGuy::player->Reset();
     }
-    else if (obstacle->isCollision())
+    else if (obstacle->isCollision() == true)
     {
         
         GravityGuy::NextLevel<GameOver>();
@@ -132,8 +132,10 @@ void Level1::Draw()
 
 void Level1::Finalize()
 {
-    //scene->Remove(GravityGuy::player, MOVING);
+    scene->Remove(GravityGuy::player, MOVING);
     delete scene;
+    delete player;
+
 }
 
 // ------------------------------------------------------------------------------

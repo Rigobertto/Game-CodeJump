@@ -1,16 +1,6 @@
-/**********************************************************************************
-// GameOver (Arquivo de Cabeçalho)
-// 
-// Criação:     14 Fev 2013
-// Atualização: 27 Set 2021
-// Compilador:  Visual C++ 2019
-//
-// Descrição:   Fim do jogo
-//              
-**********************************************************************************/
 
-#ifndef _GRAVITYGUY_GAMEOVER_H_
-#define _GRAVITYGUY_GAMEOVER_H_
+#ifndef _CODEJUMP_GAMEOVER_H_
+#define _CODEJUMP_GAMEOVER_H_
 
 // ------------------------------------------------------------------------------
 

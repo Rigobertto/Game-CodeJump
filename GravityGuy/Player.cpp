@@ -115,7 +115,13 @@ void Player::Update()
 
 
 }
-
+void Player::Reset()
+{
+    // volta ao estado inicial
+    MoveTo(window->CenterX(), 24.0f, Layer::FRONT);
+    gravity = NORMAL;
+   // level = 0;
+}
 bool Player::isColision() {
     return gameover;
 }
